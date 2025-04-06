@@ -1,0 +1,135 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOOGLE LIGHT/DARK MODE</title>
+    <style>
+body{
+ font-family: 'Courier New', Courier, monospace;
+ text-align: center;
+ border: groove;
+ padding: 60px;
+ margin: 70px;
+ background-color: darkslategray;
+ color: maroon;
+ font-size: medium;
+ font-weight: 400;
+ font-style: italic;
+ transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.dark-mode{
+background-color: black;
+color: cyan;
+}
+
+.light-mode{
+    background-color: orange;
+color: maroon;
+}
+
+
+<!-toggle btn ke leye--->
+<!-- .toggle-btn{
+padding:300px 50px ;
+font-size: 300px;
+background-color: cyan;
+cursor: pointer;  
+transition: 0.4s;
+color:green;
+border:groove;
+}
+.toggle-btn:hover{
+
+    background-color: greenyellow;
+    color:oranged;
+    cursor:pointer;
+}
+ </style>
+</head>
+<body   class="light-mode">
+    <h1>TOOGLE LIGHT/DARK MODE</h1>
+
+
+<button class="toggle-btn"  onclick="toggleMode()">TOOGLE MODE ON</button>
+
+
+<script>
+function toggleMode(){
+const body=document.body;
+body.classList.toggle("dark-mode");
+body.classList.toggle("light-mode");
+} 
+</script>
+</body>
+</html> --> 
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOOGLE LIGHT/DARK MODE</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            border: groove;
+            padding: 60px;
+            margin: 70px;
+            background-color: darkslategray;
+            color: maroon;
+            font-size: medium;
+            font-weight: 400;
+            font-style: italic;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .dark-mode {
+            background-color: black;
+            color: cyan;
+        }
+
+        .light-mode {
+            background-color: teal;
+            color: maroon;
+        }
+
+        /* toggle btn ke liye */
+        .toggle-btn {
+            padding: 20px 50px;
+            font-size: 20px;
+            background-color: cyan;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            color: green;
+            border: groove;
+        }
+
+        .toggle-btn:hover {
+            background-color: maroon;
+            color: orange;
+            cursor: pointer;
+        }
+
+        .dark-mode .toggle-btn:hover { /* Added this rule */
+            background-color: teal;
+            color: white; /* optional: changed text color for better visibility */
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <h1>TOOGLE LIGHT/DARK MODE</h1>
+    <button class="toggle-btn" onclick="toggleMode()">TOOGLE MODE ON</button>
+    <script>
+        function toggleMode() {
+            const body = document.body;
+            body.classList.toggle("dark-mode");
+            body.classList.toggle("light-mode");
+        }
+    </script>
+</body>
+</html>
